@@ -1,0 +1,16 @@
+server:
+  port: 8091
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://postgres-container:5432/bootcamp_2512
+    username: "postgres"
+    password: "admin1234"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
